@@ -49,7 +49,11 @@ cityData.forEach(function(city) {
 
 // Add a circle to the map for Los Angeles, California
 let circle = L.circle([34.0522, -118.2437], {
+<<<<<<< HEAD
 radius: city.population/100000, fillColor: "lightyellow", opacity: .5, color: "black", lineweight: 4}).addTo(map);
+=======
+radius: city.population/100000, fillColor: "lightyellow", opacity: .5, color: "black"}).addTo(map);
+>>>>>>> 92fec215802b3c7e4a2674a023f4ddbe06669843
 
 // We create the tile layer that will be the background of our map.
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
